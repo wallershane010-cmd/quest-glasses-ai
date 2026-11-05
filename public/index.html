@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080a0d"><title>Quest Glasses AI</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body><div class="shell">
+<header><a class="logo" href="#">◉ <span>QUEST <i>GLASSES</i></span></a><span class="connection"><b></b><span id="connection">Starting…</span></span><button class="gear" id="settings">⚙</button></header>
+<main>
+<section id="setup" class="setup">
+<div class="eyebrow">YOUR EVERYDAY AI COMPANION</div><h1>See the world.<br><em>Ask anything.</em></h1>
+<p class="muted">A smart-glasses-style experience, built for your headset.</p>
+<div class="devices">
+<button class="device chosen" data-mode="pc"><strong>▣</strong><span><b>PC Test</b><small>Full controls on screen</small></span><i>✓</i></button>
+<button class="device" data-mode="q2"><strong>◉</strong><span><b>Meta Quest 2</b><small>Headset layout</small></span><i>✓</i></button>
+<button class="device" data-mode="q3"><strong>◉</strong><span><b>Meta Quest 3</b><small>Headset layout</small></span><i>✓</i></button>
+</div><button id="enter" class="primary">Enter experience <span>→</span></button><small class="disclaimer">Unofficial simulator · No account required</small>
+</section>
+<section id="app" class="experience hidden">
+<div class="mode" id="mode">PC TEST MODE <b></b> READY</div>
+<div class="hero"><div class="orb-area"><div class="orbit"></div><div class="orbit second"></div><button id="talk" class="orb">✳</button></div><h2>I'm listening when you are.</h2><p id="status">Tap the center to start talking</p></div>
+<div id="chat" class="chat" aria-live="polite"><p class="bot">✳ &nbsp; Hi! I'm your Quest Glasses assistant. Tap the glowing button or type a message to begin.</p></div>
+<div class="composer"><button id="mic">🎙</button><input id="message" placeholder="Ask me anything…" maxlength="1200"><button id="send">↑</button></div>
+<div class="quick"><button data-action="time">◷ Time</button><button data-action="music">♫ Music</button><button data-action="call">☎ Call demo</button><button data-action="help">✧ Help</button></div>
+<div class="pc-tools" id="pcTools"><button id="stop">Stop voice</button><button id="back">Change device</button></div>
+</section>
+</main><footer><span>QUEST GLASSES AI</span><span>MADE FOR YOUR NEXT ADVENTURE</span></footer></div>
+<dialog id="settingsDialog"><div class="dialoghead"><h2>Settings</h2><button id="close">✕</button></div><label>Speak responses <input type="checkbox" id="speak" checked></label><p>Camera passthrough, real phone calls, and system-level controls are not available to an ordinary website. This prototype does not pretend those features are active.</p></dialog>
+<script src="/app.js"></script></body></html>
